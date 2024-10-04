@@ -1,0 +1,21 @@
+
+
+#include<stdio.h>
+
+int main()
+{
+    float radis,area;
+
+    printf("Enter the circle radis value: ");
+    scanf("%f",&radis);
+
+
+    area = 3.1416* radis*radis;
+
+    printf("Area of Circle = %.2f",area);
+
+    return 0;
+
+
+
+}
