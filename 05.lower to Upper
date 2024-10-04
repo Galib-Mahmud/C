@@ -1,0 +1,14 @@
+
+
+
+#include<stdio.h>
+int main()
+{
+
+  char lower;
+  printf("Enter the lower :");
+  scanf("%c",&lower);
+  printf("The Uppercase letter is :%c",lower-32);
+
+
+}
