@@ -9,3 +9,18 @@ int main()
   printf("The upercase letter is :%c",upper);
 
 }
+................................................
+.............................................
+
+
+#include<stdio.h>
+int main()
+{
+
+  char lower,upper;
+  printf("Enter any upper case letter:");
+  scanf("%c",&upper);
+  lower= tolower(upper);
+  printf("The lowercase letter is :%c",lower);
+
+}
