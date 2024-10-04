@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+
+    printf("My name is Galib Mahmud");
+    getch();
+}
+
+// my name is galib mahmud single line commandt
+
+/* my name is galib mahmud
+my phone no is 01581027072 (multiple line 
+                            comment*/ 
