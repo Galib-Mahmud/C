@@ -1,1 +1,21 @@
 
+#include<stdio.h>
+int main()
+{
+  int num1,num2;
+  float avg,sum;
+  printf("Enter two numbers: ");
+  scanf("%d %d",&num1,&num2);
+  sum = num1 + num2 ;
+  printf("The summation is : %.2f\n",sum);
+  sum = num1 - num2 ;
+  printf("The subtraction is : %.2f\n",sum);
+  sum = num1 * num2 ;
+  printf("The multiplication is : %.2f\n",sum);
+  sum = num1 / num2 ;
+  printf("The division is : %.2f\n",sum);
+  sum = num1 % num2 ;
+  printf("The remainder is : %.2f\n",sum);
+ 
+  return 0;
+}
