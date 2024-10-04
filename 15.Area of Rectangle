@@ -1,0 +1,22 @@
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float length,width, area;
+
+    printf("Enter length value: ");
+    scanf("%f",&length);
+    printf("Enter width value: ");
+    scanf("%f",&width);
+
+    area = length*width;
+
+    printf("Area of rectangle %.2f",area);
+
+    return 0;
+
+
+
+}
