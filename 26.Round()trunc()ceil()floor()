@@ -8,3 +8,36 @@ printf("round(%lf)= %lf\n",x,result);
 
 
 }
+#include<stdio.h>
+main(){
+
+double x=10.45;
+double result=round(x);
+printf("round(%lf)= %lf\n",x,result);
+
+
+}
+
+
+#include<stdio.h>
+main(){
+
+double x=10.45;
+double result=round(x);
+printf("round(%lf)= %lf\n",x,result);
+
+
+}
+
+
+
+#include<stdio.h>
+main(){
+
+double x=10.45;
+double result=round(x);
+printf("round(%lf)= %lf\n",x,result);
+
+
+}
+
