@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+
+// math.header abs() sqrt() pow() log() Log10() exp() sin() cos() tan()
+main(){
+
+double x=10;
+double result=sin(x);
+printf("sin(%lf)= %lf\n",x,result);
+
+
+}
