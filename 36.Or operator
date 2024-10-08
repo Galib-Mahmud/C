@@ -1,0 +1,78 @@
+/*#include<stdio.h>
+main()// Relational operator
+{
+   char ch;
+    printf("Enter a letter= ");
+    scanf("%c",&ch);
+    if(ch=='a')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='e')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='i')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='o')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='u')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='A')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='E')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='I')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='O')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='U')
+    {
+        printf("The number is Vowel");
+
+    }
+    else
+    {
+
+        printf("The number is Consonant");
+    }
+    getch();
+}
+
+*/
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter a letter = ");
+    scanf("%c",&ch);
+    if(ch=='a' || ch=='e'|| ch=='i'|| ch=='o'||ch=='u')
+
+    printf("Vowel");
+    else
+        printf("Consonant");
+
+}
