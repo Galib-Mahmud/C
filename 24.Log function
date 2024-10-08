@@ -1,0 +1,10 @@
+#include<stdio.h>
+// math.header abs() sqrt() pow() log() Log10() exp() sin() cos() tan()
+main(){
+
+double x=10;
+double result=log(x);
+printf("log(%lf)= %lf\n",x,result);
+
+
+}
