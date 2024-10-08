@@ -1,0 +1,8 @@
+
+#include<stdio.h>
+main(){
+double result=pow(5,2);
+printf("%.2f",result);
+
+
+}
