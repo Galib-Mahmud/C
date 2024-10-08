@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+main()
+{
+    //+x unary plus,,positive int
+    //-x unary minus
+    //++ increment
+    //-- decrement
+    int x= 10;
+    int result =+x;
+    printf("%d\n",result);
+    return 0;
+    //++x prefix increment
+    //x++ postfix increment
+    //--x prefix decrement
+    //x-- postfix decrement
+}
