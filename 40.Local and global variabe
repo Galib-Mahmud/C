@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+  int a=10;// main funtion er age diclear korte hoi
+int main()
+{
+
+
+   printf("Inside the main Function a=%d",a);
+   display();
+
+
+}
+void display()
+{
+    printf("Inside the display Function a=%d",a);
+}
