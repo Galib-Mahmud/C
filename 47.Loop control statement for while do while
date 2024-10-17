@@ -1,0 +1,55 @@
+
+#include<stdio.h>
+int main()
+{
+   //for loop
+
+   int i;
+   for(i=1;i<=5;i++)//initial condition update
+    printf("My name is Galib Mahmud\n");
+   return 0;
+
+
+
+}
+
+
+
+
+#include<stdio.h>
+int main()
+{
+
+
+   int i=1;//initial
+   while(i<=5)//condition
+   {
+
+ printf("My name is Galib Mahmud\n");
+    i++;//update
+    }
+   return 0;
+
+
+
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+
+   int i=1;//initialization
+ do//increment
+   {
+
+ printf("My name is Galib Mahmud\n");
+    i++;//update
+    }
+     while(i<=5);//condition
+   return 0;
+
+
+
+}
