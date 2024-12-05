@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+int i,num[100],n,max;
+printf("Enter how many numbers : ");
+scanf("%d",&n);//koi ta number nibo
+for(i=0;i<n;i++)//number er jonno index koita 
+{
+    scanf("%d",&num[i]);//index gula rakhlam
+}
+max=num[0];//protho re boro dhore nilam
+for(i=1;i<n;i++)
+{
+    if(max<num[i])//2 no index jodi boro hoi tahole max hobe 2 no
+        max=num[i];
+}
+
+printf("Maximum is %d",max);
+getch();
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,num[100],n,min;
+printf("Enter how many numbers : ");
+scanf("%d",&n);//koi ta number nibo
+for(i=0;i<n;i++)//number er jonno index koita
+{
+    scanf("%d",&num[i]);//index gula rakhlam
+}
+min=num[0];//protho re boro dhore nilam
+for(i=1;i<n;i++)
+{
+    if(min>num[i])//2 no index jodi boro hoi tahole max hobe 2 no
+        min=num[i];
+}
+
+printf("Maximum is %d",min);
+getch();
+}
