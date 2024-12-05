@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+//Array declear 
+int num[3];
+num[0]=20;
+num[1]=52;
+num[2]=12;
+int sum =num[0]+num[1]+num[2];
+printf("%d the summation of array",sum);
+
+getch();
+}
+
+
+#include<stdio.h>
+int main()
+{
+//Array declear
+int num[5],sum=0;
+num[0]=20;
+num[1]=52;
+num[2]=12;
+num[3]=45;
+num[4]=45;
+for(int i=0;i<=4;i++){
+    sum=sum +num[i];
+}
+printf("The summation of array is:  %d",sum);
+
+getch();
+}
+
+
+....................................................
+
