@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+  char s1[5];//declear
+  s1[0]='A';//initialize
+  s1[1]='B';
+  s1[2]='C';
+  s1[3]='D';
+  printf("s1=%s\n",s1);
+char s2[20]={'g','a','l','i','b'};
+char s3[19]="GAlib MAhmud";
+printf("s2=%s\n",s2);
+printf("s3 = %s\n",s3);
+
+
+
+
+}
