@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+int main()
+{
+
+    char str1[15]="Bangladesh";
+    strupr(str1);
+    printf("str1= %s\n",str1);
+strlwr(str1);
+    printf("str1= %s\n",str1);
+
+}
