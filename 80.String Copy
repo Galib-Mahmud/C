@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+int main()
+{
+char source[]="GALIB";
+char target[20];
+strcpy(target,source);// target a rakhbo
+printf("source string =%s\n",source);
+printf("target string =%s\n",target);
+
+
+}
+
+
