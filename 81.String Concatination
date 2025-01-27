@@ -1,0 +1,41 @@
+
+
+#include <stdio.h>
+int main()
+{
+char str1[]="GALIB ";
+char str2[]="MAHMUD";
+strcat(str1,str2);//string concatination
+
+printf("string1 =%s\n",str1);
+
+
+
+}
+
+.....................
+#include <stdio.h>
+int main()
+{
+char str1[50]="GALIB ";
+char str2[20]="MAHMUD";
+
+int i=0,len=0,j=0;
+while(strl[i]!='\0')
+{
+    i++;
+    len++;
+}
+while(str2[j]!='\0')
+{
+    str1[len+j]=str2[j];
+    j++;
+
+}
+
+
+printf("str1 =%s\n",str1);
+
+
+
+}
