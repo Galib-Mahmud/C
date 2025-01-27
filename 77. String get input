@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+char s1[30];
+printf("Enter your Full name ;");
+gets(s1);// scanf space r pore r kaj korte pare na
+
+printf("%s",s1);
+
+
+
+}
+
+
