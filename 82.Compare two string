@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+char str1[50]="GALIB ";
+char str2[20]="MAHMUD";
+
+int d = strcmp(str1,str2);
+if(d==0)
+{
+    printf("strings are equal");
+
+
+    else
+    {
+        printf("Strings are not equal");
+
+    }
+
+}
