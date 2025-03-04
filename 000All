@@ -1,0 +1,3171 @@
+...................Anisul Islam...............
+...................C programming.............
+
+
+
+1. Create our first c programm
+
+#include<stdio.h>
+int main()
+{
+
+    printf("My name is Galib Mahmud");
+    getch(); 
+}
+
+
+
+..................................
+
+
+
+
+
+2. Single line comman Multiple line command
+
+
+#include<stdio.h>
+int main()
+{
+
+    printf("My name is Galib Mahmud");
+    getch();
+}
+
+// my name is galib mahmud single line commandt
+
+/* my name is galib mahmud
+my phone no is 01581027072 (multiple line 
+                            comment*/ 
+
+........................................................
+::::::::::::::::::Scape Sequence::::::::::::
+\n new line
+
+
+
+
+.............................
+
+
+
+3.formate specifier
+
+
+#include<stdio.h>
+int main()
+{
+
+    int num =10,b=10;
+    printf("Numbers are %d,\n %d\n",num,b);
+
+    getch();
+}
+
+...................................................
+
+user input
+
+
+
+
+#include<stdio.h>
+int main()
+{
+
+    int num;
+    printf("Enter the first number");
+    scanf("%d",&num);
+    printf("The number is %d",num);
+
+    getch();
+}
+
+..........................................................
+
+
+#include<stdio.h>
+int main()
+{
+
+    float num1,num2;
+    printf("Enter two float number");
+    scanf("%f %f",&num1,&num2);
+    printf("The numbers are %.1f %.1f\n",num1,num2);
+
+    return 0;
+}
+
+
+.............................................................
+
+size of data type
+
+
+
+
+#include<stdio.h>
+int main()
+{
+
+   int i;
+   float f;
+   char c;
+   double d;
+   printf("size of int=%d bytes\n",sizeof(i));
+       printf("size of float=%d bytes\n",sizeof(f));
+          printf("size of char=%d bytes\n",sizeof(c));
+             printf("size of double=%d bytes\n",sizeof(d));
+
+    return 0;
+}
+
+
+.....................................
+
+4. Print ascii value
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+
+   int i;
+   float f;
+   char c;
+   double d;
+   printf("size of int=%d bytes\n",sizeof(i));
+       printf("size of float=%d bytes\n",sizeof(f));
+          printf("size of char=%d bytes\n",sizeof(c));
+             printf("size of double=%d bytes\n",sizeof(d));
+
+    return 0;
+}
+
+
+............................................
+
+
+5.lower to Upper 
+
+
+
+#include<stdio.h>
+int main()
+{
+
+  char lower;
+  printf("Enter the lower :");
+  scanf("%c",&lower);
+  printf("The Uppercase letter is :%c",lower-32);
+
+
+}
+
+
+.......................................................
+
+
+6.Upper to lower
+
+
+
+
+ #include<stdio.h>
+int main()
+{
+
+  char upper;
+  printf("Enter the upper :");
+  scanf("%c",&upper);
+  printf("The lowercase letter is :%c",upper+32);
+
+
+}
+
+
+.....................................................
+
+7.Library function
+
+
+
+#include<stdio.h>
+int main()
+{
+
+  char lower,upper;
+  printf("Enter any lower case letter:");
+  scanf("%c",&lower);
+  upper= toupper(lower);
+  printf("The upercase letter is :%c",upper);
+
+}
+
+
+.........................................................
+
+
+#include<stdio.h>
+int main()
+{
+
+  char lower,upper;
+  printf("Enter any upper case letter:");
+  scanf("%c",&upper);
+  lower= tolower(upper);
+  printf("The lowercase letter is :%c",lower);
+
+}
+
+
+
+.............................................................
+
+8.decimal to octal
+
+
+
+#include<stdio.h>
+int main()
+{
+  int number;
+   printf("Decimal number: ");
+   scanf("%d",&number);
+   printf("Octal number = %o",number);
+
+  getch();
+}
+
+hexa %x octal %o decimal %d;
+
+
+...........................................
+
+
+
+9.Hexa to octal
+
+
+
+
+#include<stdio.h>
+int main()
+{
+  int number;
+   printf("Decimal number: ");
+   scanf("%d",&number);
+   printf("Octal number = %o",number);
+
+  getch();
+}
+
+
+...................................................
+
+
+10. Summation
+
+
+
+#include<stdio.h>
+int main()
+{
+  int num1,num2,sum;
+  printf("Enter two numbers: ");
+  scanf("%d %d",&num1,&num2);
+  sum = num1 + num2 ;
+  printf("The summation is : %d\n",sum);
+  return 0;
+}
+
+..........................................
+
+11. Avarage
+
+
+#include<stdio.h>
+int main()
+{
+  int num1,num2;
+  float avg,sum;
+  printf("Enter two numbers: ");
+  scanf("%d %d",&num1,&num2);
+  sum = num1 + num2 ;
+  printf("The summation is : %.2f\n",sum);
+  avg=sum/2;
+  printf("Avarage =%f",avg);
+  return 0;
+}
+
+
+.......................................................
+
+12.Sumation multiplication division remainder
+
+
+
+
+#include<stdio.h>
+int main()
+{
+  int num1,num2;
+  float avg,sum;
+  printf("Enter two numbers: ");
+  scanf("%d %d",&num1,&num2);
+  sum = num1 + num2 ;
+  printf("The summation is : %.2f\n",sum);
+  sum = num1 - num2 ;
+  printf("The subtraction is : %.2f\n",sum);
+  sum = num1 * num2 ;
+  printf("The multiplication is : %.2f\n",sum);
+  sum = num1 / num2 ;
+  printf("The division is : %.2f\n",sum);
+  sum = num1 % num2 ;
+  printf("The remainder is : %.2f\n",sum);
+ 
+  return 0;
+}
+
+
+
+............................................................
+
+
+13.Area of a triangle 
+
+#include<stdio.h>
+int main()
+{
+  float base,height,area;
+  printf("Enter the base:");
+  scanf("%f",&base);
+  printf("Enter the height");
+  scanf("%f",&height);
+  area = 0.5 * base* height;
+  printf("Area is :%f",area);
+
+  return 0;
+}
+
+
+..............................................................
+
+
+
+14. given three base of a triangle
+
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double num1,num2,num3,s,area;
+
+    printf("Enter three value: ");
+    scanf("%lf %lf %lf",&num1,&num2,&num3);
+    s = (num1+num2+num3)/2 ;
+    area = sqrt(s*(s-num1)*(s-num2)*(s-num3));
+
+    printf("Area of %.2lf",area);
+
+    return 0;
+
+
+
+}
+
+
+
+.......................................... 
+
+
+15. Area of Rectangle
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float length,width, area;
+
+    printf("Enter length value: ");
+    scanf("%f",&length);
+    printf("Enter width value: ");
+    scanf("%f",&width);
+
+    area = length*width;
+
+    printf("Area of rectangle %.2f",area);
+
+    return 0;
+
+
+
+}
+
+
+......................................................
+
+
+
+16. Area of circle
+
+
+#include<stdio.h>
+
+int main()
+{
+    float radis,area;
+
+    printf("Enter the circle radis value: ");
+    scanf("%f",&radis);
+
+
+    area = 3.1416* radis*radis;
+
+    printf("Area of Circle = %.2f",area);
+
+    return 0;
+
+
+
+}
+
+
+
+
+#include<stdio.h>
+#include<math.h.>
+
+int main()
+{
+    float radis,area;
+
+    printf("Enter the circle radis value: ");
+    scanf("%f",&radis);
+
+
+    area = M_PI* radis*radis;
+
+    printf("Area of Circle = %.2f",area);
+
+    return 0;
+
+
+
+}
+
+....................................................... 
+
+
+
+17. Celsius to Fahrenheit
+
+
+
+#include<stdio.h>
+int main()
+{
+    float c,f;
+
+    printf("Enter the celsious value: ");
+    scanf("%f",&c);
+
+
+    f = (c*1.8)+32;
+
+    printf("Fahrenheit : %.2f",f);
+
+    return 0;
+
+
+
+}
+
+
+
+
+...............................................................
+
+
+
+18. swap two numbers with temporary variable
+
+
+
+#include<stdio.h>
+int main()
+{
+   int num1=10;
+   int num2=5;
+   int temp;
+   temp=num1;
+   num1=num2;
+   num2=temp;
+   printf("num1=%d\n",num1);
+   printf("num2=%d",num2);
+
+   return 0;
+
+
+
+}
+
+
+............................................................
+
+
+19.swap two numbers without temporary variable
+
+
+#include<stdio.h>
+int main()
+{
+   int num1=10;
+   int num2=5;
+   num1 = num1 - num2;
+   num2 = num1 + num2;
+   num1 = num2 - num1;
+
+   printf("num1=%d\n",num1);
+   printf("num2=%d",num2);
+
+   return 0;
+
+
+
+}
+
+
+............................................................
+
+
+
+20. Quadric equation 
+
+#include<stdio.h>
+int main()
+{
+double a,b,c,d,x1,x2;
+
+
+   printf(" Enter a b c : ");
+   scanf("%lf %lf %lf",&a,&b,&c);
+   d = sqrt(b*b-4*a*c);
+   x1=(-b+d)/(2*a);
+   x2=(-b-d)/(2*a);
+
+   printf("x1 = %lf\n",x1);
+   printf("x2 = %lf\n",x2);
+   return 0;
+
+
+
+}
+
+
+...............................................................
+
+
+21. Absolute value 
+
+
+#include<stdio.h>
+int main()
+{
+
+   int result =   abs(-25);
+   printf("%d",result);
+
+    return 0;
+
+}
+
+
+............................................................
+
+22. Squart root
+
+#include<stdio.h>
+int main()
+{
+
+   double result = sqrt(25);
+   printf("%lf",result);
+
+    return 0;
+
+}
+
+
+..............................................................
+
+
+23.Power 
+
+
+
+#include<stdio.h>
+main(){
+double result=pow(5,2);
+printf("%.2f",result);
+
+
+}
+
+
+24.log
+
+
+#include<stdio.h>
+// math.header abs() sqrt() pow() log() Log10() exp() sin() cos() tan()
+main(){
+
+double x=10;
+double result=log(x);
+printf("log(%lf)= %lf\n",x,result);
+
+
+}
+
+
+.............................................
+
+25.exp
+
+
+#include<stdio.h>
+#include<math.h>
+
+// math.header abs() sqrt() pow() log() Log10() exp() sin() cos() tan()
+main(){
+
+double x=10;
+double result=sin(x);
+printf("sin(%lf)= %lf\n",x,result);
+
+
+}
+
+........................................................
+
+
+
+26.Round()trunc()ceil()floor()
+
+
+#include<stdio.h>
+main(){
+
+double x=10.45;
+double result=round(x);
+printf("round(%lf)= %lf\n",x,result);
+
+
+}
+
+
+
+
+
+#include<stdio.h>
+main(){
+
+double x=10.45;
+double result=round(x);
+printf("round(%lf)= %lf\n",x,result);
+
+
+}
+
+
+#include<stdio.h>
+main(){
+
+double x=10.45;
+double result=round(x);
+printf("round(%lf)= %lf\n",x,result);
+
+
+}
+
+
+
+#include<stdio.h>
+main(){
+
+double x=10.45;
+double result=round(x);
+printf("round(%lf)= %lf\n",x,result);
+
+
+}
+
+
+..............................................
+
+
+27.Assignment Operator
+
+
+#include<stdio.h>
+
+//assignment operator =,+=.-=,*=,/=
+main()
+{
+
+    int a=5;
+    a+=2;
+    printf("%d\n",a);
+    return 0;
+
+
+}
+
+
+........................................
+
+
+28.Unary Operator
+
+
+#include<stdio.h>
+main()
+{
+    //+x unary plus,,positive int
+    //-x unary minus
+    //++ increment
+    //-- decrement
+    int x= 10;
+    int result =+x;
+    printf("%d\n",result);
+    return 0;
+    //++x prefix increment
+    //x++ postfix increment
+    //--x prefix decrement
+    //x-- postfix decrement
+}
+
+
+............................................
+
+29.Increment Decrement 
+
+#include<stdio.h>
+main()
+{
+int x=10;
+int y=x++;
+printf("x=%d\n",x);
+printf("y=%d\n",y);
+return 0;
+
+}
+
+
+
+#include<stdio.h>
+main()
+{
+int x=10;
+int y=--x;
+printf("x=%d\n",x);
+printf("y=%d\n",y);
+return 0;
+
+}
+
+
+30.Relational Operator
+
+
+  #include<stdio.h>
+main()
+{
+int num;
+printf("Enter an integer");
+scanf("%d",&num);
+if(num%2==0)
+    printf("Even\n");
+    //else 
+if(num%2!=0)
+    printf("Odd\n");
+    return 0;
+
+}
+................................
+
+
+31.Greatest number among two integer number using if else
+
+
+
+#include<stdio.h>
+main()
+{
+int num1,num2;
+printf("Enter First integer");
+scanf("%d",&num1);
+printf("Enter Second integer");
+scanf("%d",&num2);
+
+if(num1>num2)
+{
+  printf("The greatest number is %d\n",num1);
+}
+if(num1
+
+else
+    {
+        printf("The greatest number is %d",num2);
+
+    }
+    return 0;
+}
+
+..............................................................
+
+
+
+
+
+
+32.Letter grade using if else
+
+#include<stdio.h>
+main()
+{
+    float marks;
+    printf("Enter marks");
+    scanf("%f",&marks);
+    if(marks>=80)
+        printf("A+");
+    else if(marks>=70)
+        printf("A");
+    else if(marks>=60)
+        printf("A-");
+    else if(marks>=50)
+        printf("B");
+    else if(marks>=40)
+        printf("C");
+    else if(marks>=33)
+        printf("D");
+    else
+        printf("Fail");
+
+    return 0;
+}
+
+
+
+
+33.Even or Odd
+
+
+#include<stdio.h>
+main()
+{
+    int number;
+    printf("Enter number ");
+    scanf("%d",&number);
+    if(number%2==0)
+    {
+      printf("The number is Even");
+    }
+    else
+
+
+        printf("The number is Odd");
+
+         return 0;
+}
+
+34.Positive or Negative
+
+
+#include<stdio.h>
+main()
+{
+    int number;
+    printf("Enter number ");
+    scanf("%d",&number);
+    if(number>0)
+    {
+        printf("The number is Positive");
+
+    }
+     else if(number==0)
+
+        {
+            printf("The number is Zero");
+
+        }
+    else
+    {
+
+        printf("The number is Negative");
+    }
+
+    return 0;
+}
+
+...........................................................
+
+
+35.Large Number
+
+
+#include<stdio.h>
+main()
+{
+    int num1,num2;
+    printf("Enter two number ");
+    scanf("%d %d",&num1,&num2);
+    if(num1>num2)
+    {
+        printf("The large number is= %d\n",num1);
+
+    }
+    else if(num1<num2)
+
+    {
+        printf("The large number is= %d",num2);
+
+    }
+    else
+    {
+
+        printf("The number is Equal");
+    }
+    getch();
+}
+
+..................................................
+
+
+36.Or operator
+
+/*#include<stdio.h>
+main()// Relational operator
+{
+   char ch;
+    printf("Enter a letter= ");
+    scanf("%c",&ch);
+    if(ch=='a')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='e')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='i')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='o')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='u')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='A')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='E')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='I')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='O')
+    {
+        printf("The number is Vowel");
+
+    }
+    else if (ch=='U')
+    {
+        printf("The number is Vowel");
+
+    }
+    else
+    {
+
+        printf("The number is Consonant");
+    }
+    getch();
+}
+
+*/
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter a letter = ");
+    scanf("%c",&ch);
+    if(ch=='a' || ch=='e'|| ch=='i'|| ch=='o'||ch=='u')
+
+    printf("Vowel");
+    else
+        printf("Consonant");
+
+}
+
+.......................................................
+
+
+
+
+
+37.Maximum number in three numbers Logical and operator
+
+#include<stdio.h>
+int main()
+{
+
+    int num1,num2,num3;
+    printf("Enter three numbers");
+    scanf("%d %d %d",&num1,&num2,&num3);
+    if(num1>num2 && num1>num3)
+        printf("Large Number =%d",num1);
+    else  if(num2>num1 && num2>num3)
+        printf("Large Number =%d",num2);
+    else if(num3>num2 && num3>num1)
+        printf("Large Number =%d",num3);
+        else
+            printf("The Number is equal");
+    getch();
+
+
+}
+
+
+
+...............................................
+
+
+38.Leap year or not
+
+
+#include<stdio.h>
+int main()
+{
+
+    int year;
+    printf("Enter any year ");
+    scanf("%d",&year);
+    if(year%400==0)
+        printf("Leap year");
+    else  if(year%4==0 && year%100!=0)
+        printf("Leap Year");
+
+    else
+        printf("Not Leap Year");
+
+
+
+}
+
+............................................
+
+39.Capital Letter or small letter
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+
+    char ch;
+    printf("Enter any letter ");
+    scanf("%c",&ch);
+    if(ch>='a' && ch<='z')
+        printf("Small letter");
+    else  if(ch>='A' && ch<='Z')
+        printf("Capital Letter ");
+
+    else
+        printf("Not a Letter");
+
+
+
+}
+
+.......................................................
+
+40.Local and global variabe
+
+
+
+#include<stdio.h>
+  int a=10;// main funtion er age diclear korte hoi
+int main()
+{
+
+
+   printf("Inside the main Function a=%d",a);
+   display();
+
+
+}
+void display()
+{
+    printf("Inside the display Function a=%d",a);
+}
+
+........................................................
+  
+
+41.Switch Case break default
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    //switch case break default
+    int num;
+    printf("Enter number");
+    scanf("%d",&num);
+    switch(num)
+    {
+    case 0:
+        printf("Zero\n");
+        break;
+
+
+    case 1:
+        printf("One\n");
+        break;
+
+
+    case 2:
+        printf("two\n");
+        break;
+
+
+    case 3:
+        printf("three\n");
+        break;
+
+
+    case 4:
+        printf("four\n");
+        break;
+
+    case 5:
+        printf("five\n");
+        break;
+
+    case 6:
+        printf("six\n");
+        break;
+
+    case 7:
+        printf("Seven\n");
+        break;
+
+    case 8:
+        printf("Eight\n");
+        break;
+
+    case 9:
+        printf("Nine\n");
+        break;
+
+    default:
+         printf("The number is invalid");
+    }
+
+
+
+
+
+
+    return 0;
+}
+
+........................................................
+
+
+42. Vowel or consonant using switch 
+
+
+#include<stdio.h>
+int main()
+{
+    //switch case break default
+    int ch;
+    printf("Enter number : ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+
+        printf("Vowel\n");
+        break;
+
+    default:
+        printf("Consonant");
+
+
+        return 0;
+    }
+}
+..................................................
+
+
+43.Temparature Conversion Using Switch Case
+
+
+
+#include<stdio.h>
+int main()
+{
+int choice;
+float temp,convertedTemp;
+
+   printf("Temparature conversion menu");
+   printf("1.Fahrenheit to Celsios\n");
+   printf("2.Celsios to Fahrenheit\n");
+   printf("Enter your choice ");
+   scanf("%d",&choice);
+   switch(choice)
+   {
+   case 1:
+       {
+
+
+    printf("Enter the fahrenheit tempature: ");
+    scanf("%f",&temp);
+    convertedTemp= (temp-32)/1.8;
+    printf("The Celsios temperature %f\n",convertedTemp);
+
+    break;
+       }
+
+   case 2:
+       {
+    printf("Enter the Celsios tempature: ");
+    scanf("%f",&temp);
+    convertedTemp= (1.8*temp)+32;
+    printf("The Fahrenheit temperature %f\n",convertedTemp);
+
+}
+   default:
+    printf("Not a correct option: ");
+return 0;
+
+}}
+...............................................................
+
+
+44.Calculator using switch 
+
+
+#include<stdio.h>
+int main()
+{
+    char op;
+    double num1,num2;
+    printf("Choose an operators(+,-,*,/");
+    scanf("%c",&op);
+    printf("Enter two numbers: ");
+    scanf("%lf %lf",&num1,&num2);
+
+
+    switch(op)
+    {
+    case '+':
+    {
+
+
+        printf("%lf + %lf  =%lf",num1,num2,num1+num2);
+        break;
+    }
+    case '-':
+    {
+
+
+        printf("%lf - %lf  =%lf",num1,num2,num1-num2);
+        break;
+
+    }
+    case '*':
+    {
+
+
+        printf("%lf * %lf  =%lf",num1,num2,num1*num2);
+        break;
+    }
+    case '/':
+    {
+
+
+        printf("%lf / %lf  =%lf",num1,num2,num1/num2);
+        break;
+    }
+    default:
+        printf("Invallid");
+
+
+    }
+
+
+
+}
+
+
+....................................................................
+
+45. Conditional Operator
+
+
+
+#include<stdio.h>
+int main(){
+int num1,num2,large;
+printf("Enter two numbers: ");
+scanf("%d %d",&num1,&num2);
+large =(num1>num2) ? num1:num2;
+
+
+printf("The large number is : %d",large);
+return 0;
+}
+
+
+
+
+..........................................................
+
+46.Bitwise operator 
+
+#include<stdio.h>
+int main()
+{
+    int a=32;
+    int b=12;
+    int c;
+    c=a&b;
+    printf("a&b = %d\n",c);
+
+    c=a|b;
+    printf("a|b = %d\n",c);
+    c=a^b;
+    printf("a^b = %d\n",c);
+
+
+
+}
+
+
+47.Loop control statement for while do while
+
+
+#include<stdio.h>
+int main()
+{
+   //for loop
+
+   int i;
+   for(i=1;i<=5;i++)//initial condition update
+    printf("My name is Galib Mahmud\n");
+   return 0;
+
+
+
+}
+
+
+
+
+#include<stdio.h>
+int main()
+{
+
+
+   int i=1;//initial
+   while(i<=5)//condition
+   {
+
+ printf("My name is Galib Mahmud\n");
+    i++;//update
+    }
+   return 0;
+
+
+
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+
+   int i=1;//initialization
+ do//increment
+   {
+
+ printf("My name is Galib Mahmud\n");
+    i++;//update
+    }
+     while(i<=5);//condition
+   return 0;
+
+
+
+}
+
+....................................................
+
+48. Break and continue statement
+
+
+
+
+#include<stdio.h>
+int main()
+{
+  int i;
+
+ for(i=1;i<20;i++)
+{
+
+
+if(i%3==0)
+ continue;
+ printf("%d\n",i);
+if(i==10)
+   break;
+}
+
+
+}
+
+
+
+.........................................................
+
+
+49.Goto statement
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i=1;
+print:  //label
+    printf("%d\t",i);
+    i++;
+    if (i<5)
+        goto print; // label is calling here
+
+    return 0;
+
+}
+
+
+..............................................................
+
+
+50.Guner namta Multiplication
+
+
+
+#include<stdio.h>
+int main()
+{
+    while(1)
+    {
+        int num,i;
+        printf("Enter any number : ");
+        scanf("%d",&num);
+        for(i=1; i<=10; i++)
+        {
+            printf("%d X %d = %d\n",num,i,num*i);
+
+        }
+    }
+
+}
+
+
+........................................................
+
+51.Factorial 
+
+
+
+#include<stdio.h>
+int main()
+{
+
+  int num,i,fact=1;
+        printf("Enter any number : ");
+        scanf("%d",&num);
+        for(i=1;i<=num;i++)
+            fact=fact*i;
+        printf("%d\n",fact);
+        return 0;
+
+}
+
+
+.............................................................
+
+52.Prime or Not
+
+
+
+#include <stdio.h>
+
+int main() {
+
+  int n, i, flag = 0;
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
+
+  // 0 and 1 are not prime numbers
+  // change flag to 1 for non-prime number
+  if (n == 0 || n == 1)
+    flag = 1;
+
+  for (i = 2; i <= n / 2; ++i) {
+
+    // if n is divisible by i, then n is not prime
+    // change flag to 1 for non-prime number
+    if (n % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  // flag is 0 for prime numbers
+  if (flag == 0)
+    printf("%d is a prime number.", n);
+  else
+    printf("%d is not a prime number.", n);
+
+  return 0;
+}
+
+
+..........................................................
+
+
+53.GCD LCM
+
+
+
+
+
+#include <stdio.h>
+int main()
+{
+    int num1,num2,n1,n2,rem,gcd,lcm;
+    printf("Enter two numbers : ");
+    scanf("%d %d",&num1,&num2);
+    n1=num1;
+    n2=num2;
+    while(n2!=0)
+    {
+        rem=n1%n2;
+        n1=n2;
+        n2=rem;
+    }
+    gcd=n1;
+    lcm=(num1*num2)/gcd;
+    printf("GCD = %d\n",gcd);
+    printf("LCM = %d\n",lcm);
+    getch();
+
+
+}
+
+
+.................................................................
+
+
+54.Sum of digits
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,temp,rem,sum=0,num;
+
+printf("Enter any number: ");
+scanf("%d",&num);
+temp=num;
+while(temp!=0)
+{
+    rem=temp%10;
+    sum=sum+rem;
+    temp=temp/10;
+}
+printf("sum of digits  :%d\n",sum);
+getch();
+
+}
+
+
+..................................................
+
+55.Reverse
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,temp,rem,sum=0,num;
+
+printf("Enter any number: ");
+scanf("%d",&num);
+temp=num;
+while(temp!=0)
+{
+    rem=temp%10;
+    sum=sum*10+rem;
+    temp=temp/10;
+}
+printf("Reverse of  :%d\n",sum);
+getch();
+
+}
+
+
+
+...............................................................
+
+56.Palindrome 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,temp,rem,sum=0,num;
+
+printf("Enter any number: ");
+scanf("%d",&num);
+temp=num;
+while(temp!=0)
+{
+    rem=temp%10;
+    sum=sum*10+rem;
+    temp=temp/10;
+}
+if(num==sum)
+    printf("Palindrome");
+else
+    printf("Not Palindrome");
+getch();
+
+}
+
+
+....................................................
+
+
+57.Armstrong
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,temp,rem,sum=0,num;
+
+printf("Enter any number: ");
+scanf("%d",&num);
+temp=num;
+while(temp!=0)
+{
+    rem=temp%10;
+    sum=sum +rem*rem*rem;
+    temp=temp/10;
+}
+if(num==sum)
+    printf("Armstrong");
+else
+    printf("Not Armstrong");
+getch();
+
+}
+
+
+.....................................................
+
+58.Counting number of digits
+
+
+
+#include<stdio.h>
+int main()
+{
+int num,count=0;
+
+printf("Enter any number: ");
+scanf("%d",&num);
+while(num!=0)
+{
+    num=num/10;
+    ++count;
+}
+printf("Total number of digits: %d\n",count);
+
+getch();
+
+}
+............................................................
+
+
+
+
+
+
+59.Strong Number
+
+
+#include<stdio.h>
+int main()
+{
+int i, temp,rem,sum=0,num,fact;
+
+printf("Enter any number: ");
+scanf("%d",&num);
+temp=num;
+while(temp!=0)
+{
+    rem=temp%10;
+    fact=1;
+    for(i=1;i<=rem;i++)
+    {
+        fact=fact*i;
+
+    }
+    sum=sum+fact;
+    temp=temp/10;
+}
+if(sum==num)
+    printf("%d is a Strong Number",num);
+else
+    printf("%d is a Strong Number",num);
+getch();
+
+}
+...................................................
+
+60.Sum of series
+
+
+#include<stdio.h>
+int main()
+{
+int i, n,sum=0;
+printf("enter the last number: ");
+scanf("%d",&n);
+
+printf("1+2+....%d\n",n);
+
+for(i=1;i<=n;i=i+1)
+{
+    sum=sum+i;
+}
+printf("%d",sum);
+getch();
+}
+
+
+...................................................
+
+61. Natural number print
+
+
+#include<stdio.h>
+int main()
+{
+int i, n;
+printf("Enter the value of n =   ");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++)
+{
+    printf("%d   ",i);
+}
+
+getch();
+}
+
+
+...................................................
+
+
+62.Summation od series even odd number
+
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,sum=0, n;
+printf("Enter the value of n =   ");
+scanf("%d",&n);
+
+for(i=1;i<=n;i=i+2)
+{
+   sum=sum+i;
+}
+printf("The summation is: %d",sum);
+
+getch();
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,sum=0, n;
+printf("Enter the value of n =   ");
+scanf("%d",&n);
+
+for(i=2;i<=n;i=i+2)
+{
+   sum=sum+i;
+}
+printf("The summation is: %d",sum);
+
+getch();
+}
+
+
+
+#include<stdio.h>
+int main()//1.5+2.5+3.5+4.5+........n
+{
+float i,sum=0, n;
+printf("Enter the value of n =   ");
+scanf("%f",&n);
+
+for(i=1.5;i<=n;i++)
+{
+   sum=sum+i;
+}
+printf("The summation is: %f",sum);
+
+getch();
+}
+
+
+
+
+
+..................................................
+
+
+63.Fibonacci series
+
+
+#include<stdio.h>
+int main()
+{
+int first=0,second=1,count=0,fibo,n;
+printf("Enter Range : ");
+scanf("%d",&n);
+while(count<n){
+
+    if (count<=1){
+        fibo=count;
+    }
+    else {
+        fibo=first+second;
+        first=second;
+        second=fibo;
+    }
+    printf("%d ",fibo);
+    count++;
+
+}
+
+
+
+getch();
+}
+
+
+
+...............................................
+
+
+64.Pattern Right side triangle
+
+
+
+#include<stdio.h>
+int main()
+{
+
+int n,row,col;
+printf("Enter N : ");
+scanf("%d",&n);
+for(row=1;row<=n;row++)
+{
+    for(col=1;col<=row;col++)
+    {
+        printf("%d  ",col);
+
+    }
+    printf("\n");
+}
+
+
+
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+int n,row,col;
+printf("Enter N : ");
+scanf("%d",&n);
+for(row=1;row<=n;row++)
+{
+    for(col=1;col<=row;col++)
+    {
+        printf("%d  ",row);
+
+    }
+    printf("\n");
+}
+
+
+
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+
+int n,row,col;
+printf("Enter N : ");
+scanf("%d",&n);
+for(row=1;row<=n;row++)
+{
+    for(col=1;col<=row;col++)
+    {
+        printf("%d  ",col%2);
+
+    }
+    printf("\n");
+}
+
+
+
+}
+
+
+
+
+#include<stdio.h>
+int main()
+{
+
+int n,row,col;
+printf("Enter N : ");
+scanf("%d",&n);
+for(row=1;row<=n;row++)
+{
+    for(col=1;col<=row;col++)
+    {
+        printf("%d  ",row%2);
+
+    }
+    printf("\n");
+}
+
+
+
+}
+
+
+//charecter 
+
+#include<stdio.h>
+int main()
+{
+
+int n,row,col;
+printf("Enter N : ");
+scanf("%d",&n);
+for(row=1;row<=n;row++)
+{
+    for(col=1;col<=row;col++)
+    {
+        printf("%c  ",col+64);//96 for small
+
+    }
+    printf("\n");
+}
+
+
+
+}
+
+
+
+
+
+
+..............................................
+
+65.Array declear
+
+
+
+#include<stdio.h>
+int main()
+{
+//Array declear 
+int num[3];
+num[0]=20;
+num[1]=52;
+num[2]=12;
+int sum =num[0]+num[1]+num[2];
+printf("%d the summation of array",sum);
+
+getch();
+}
+
+
+#include<stdio.h>
+int main()
+{
+//Array declear
+int num[5],sum=0;
+num[0]=20;
+num[1]=52;
+num[2]=12;
+num[3]=45;
+num[4]=45;
+for(int i=0;i<=4;i++){
+    sum=sum +num[i];
+}
+printf("The summation of array is:  %d",sum);
+
+getch();
+}
+
+
+....................................................
+
+
+66.Array user input
+
+
+#include<stdio.h>
+int main()
+{
+int i,num[10],sum=0;
+printf("Enter 10 integer number :");
+for(i=0;i<10;i++)
+{
+    scanf("%d ",&num[i]);
+}
+
+for(i=0;i<10;i++){
+    sum=sum +num[i];
+}
+printf("The summation of array is:  %d",sum);
+
+getch();
+}
+
+
+
+.......................................................
+
+67.Maximum/Minimum using array
+
+
+#include<stdio.h>
+int main()
+{
+int i,num[100],n,max;
+printf("Enter how many numbers : ");
+scanf("%d",&n);//koi ta number nibo
+for(i=0;i<n;i++)//number er jonno index koita 
+{
+    scanf("%d",&num[i]);//index gula rakhlam
+}
+max=num[0];//protho re boro dhore nilam
+for(i=1;i<n;i++)
+{
+    if(max<num[i])//2 no index jodi boro hoi tahole max hobe 2 no
+        max=num[i];
+}
+
+printf("Maximum is %d",max);
+getch();
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,num[100],n,min;
+printf("Enter how many numbers : ");
+scanf("%d",&n);//koi ta number nibo
+for(i=0;i<n;i++)//number er jonno index koita
+{
+    scanf("%d",&num[i]);//index gula rakhlam
+}
+min=num[0];//protho re boro dhore nilam
+for(i=1;i<n;i++)
+{
+    if(min>num[i])//2 no index jodi boro hoi tahole max hobe 2 no
+        min=num[i];
+}
+
+printf("Maximum is %d",min);
+getch();
+}
+
+............................................................
+
+68.Fibonacci series using array
+
+
+#include<stdio.h>
+int main()
+{
+    int a[30],n,i;
+    printf("How many fibonacci numbers;");
+    scanf("%d",&n);
+    a[0]=0;
+     a[1]=1;
+     for(i=2;i<n;i++)
+     {
+         a[i]=a[i-1] + a[i-2];
+     }
+    printf("\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d  ",a[i]);
+
+    }
+
+
+
+}
+
+
+..............................................................
+
+
+
+
+69.Linear search
+
+#include<stdio.h>
+int main()
+{
+ int num[]={10,2,15,20,35,46,85};
+ int value,pos=-1,i;
+ printf("Enter the value you want to search : ");
+ scanf("%d",&value);
+
+for(i=0;i<7;i++)
+{
+    if(value==num[i])
+    {
+        pos=i+1;
+        break;
+    }
+}
+ if(pos==-1)
+ {
+    printf("Item is not found ");
+
+ }
+ else{
+    printf("The value is found at position %d ",pos);
+ }
+
+}
+
+...................................................................
+
+
+
+70.Coping all elements of an array
+
+
+
+
+#include<stdio.h>
+int main()
+{
+   int array1[30],n,array2[32],i;
+   printf("How many numbers:");
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+   {
+       scanf("%d",&array1[i]);
+   }
+    printf("array1 : ");
+    for(i=0;i<5;i++)
+    {
+        printf("%d ",array1[i]);
+    }
+
+    for(i=0;i<5;i++)
+    {
+        array2[i]=array1[i];
+    }
+    printf("\nArray2 : ");
+    for(i=0;i<5;i++)
+    {
+        printf("%d ",array2[i]);
+    }
+    getch();
+}
+
+
+
+......................................................
+
+
+71. 2D Array
+
+
+#include<stdio.h>
+int main(){
+int i,j;
+int A[3][4]={{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+for(i=0;i<3;i++)
+{
+    for(j=0;j<4;j++)
+    {
+        printf("%d ",A[i][j]);
+    }
+    printf("\n");
+}
+
+
+
+}
+....................................................
+
+72.Array Input
+
+
+#include<stdio.h>
+int main(){
+int i,j;
+int A[3][4];
+for(i=0;i<3;i++)
+{
+    for(j=0;j<4;j++)
+    {
+        printf("A[%d][%d]=",i,j);
+        scanf("%d",&A[i][j]);
+    }
+    printf("\n");
+}
+
+for(i=0;i<3;i++)
+{
+    for(j=0;j<4;j++)
+    {
+        printf("%d   ",A[i][j]);
+    }
+    printf("\n");
+}
+
+
+
+}
+
+
+
+........................................................
+
+73.Print two matrix
+
+
+
+
+#include<stdio.h>
+int main(){
+int i,j;
+int A[3][4],B[3][4];
+
+//Scaning A
+printf("Enter elements of a matrix :\n");
+for(i=0;i<3;i++)
+{
+    for(j=0;j<4;j++)
+    {
+        printf("A[%d][%d]=",i,j);
+        scanf("%d",&A[i][j]);
+    }
+    printf("\n");
+}
+//Printing A
+printf("A = ");
+for(i=0;i<3;i++)
+{
+    printf("\t");
+    for(j=0;j<4;j++)
+    {
+        printf("%d   ",A[i][j]);
+    }
+    printf("\n");
+}
+
+//Scaning B
+printf("Enter elements of b matrix :\n");
+for(i=0;i<3;i++)
+{
+    for(j=0;j<4;j++)
+    {
+        printf("B[%d][%d]=",i,j);
+        scanf("%d",&B[i][j]);
+    }
+    printf("\n");
+}
+//Printing B
+printf("B = ");
+for(i=0;i<3;i++)
+{
+    printf("\t");
+    for(j=0;j<4;j++)
+    {
+        printf("%d   ",B[i][j]);
+    }
+    printf("\n");
+}
+
+
+
+}
+
+.......................................................
+
+
+74.Addition of Matrix
+
+
+
+#include<stdio.h>
+int main(){
+int i,j,NumberOfRows,NumberOfCols;
+int A[10][10],B[10][10],C[10][10];
+printf("Enter Rows And Cols:");
+scanf("%d %d",&NumberOfRows,&NumberOfCols);
+
+//Scaning A
+printf("Enter elements of a matrix :\n");
+for(i=0;i<NumberOfRows;i++)
+{
+    for(j=0;j<NumberOfCols;j++)
+    {
+        printf("A[%d][%d]=",i,j);
+        scanf("%d",&A[i][j]);
+    }
+    printf("\n");
+}
+
+//Scaning B
+printf("Enter elements of b matrix :\n");
+for(i=0;i<NumberOfRows;i++)
+{
+    for(j=0;j<NumberOfCols;j++)
+    {
+        printf("B[%d][%d]=",i,j);
+        scanf("%d",&B[i][j]);
+    }
+    printf("\n");
+}
+//Printing A
+printf("A = ");
+for(i=0;i<NumberOfRows;i++)
+{
+    printf("\t");
+    for(j=0;j<NumberOfCols;j++)
+    {
+        printf("%d   ",A[i][j]);
+    }
+    printf("\n");
+}
+
+
+//Printing B
+printf("B = ");
+for(i=0;i<NumberOfRows;i++)
+{
+    printf("\t");
+    for(j=0;j<NumberOfCols;j++)
+    {
+        printf("%d   ",B[i][j]);
+    }
+    printf("\n");
+}
+
+//Adding the mattrix
+
+for(i=0;i<NumberOfRows;i++)
+{
+    for(j=0;j<NumberOfCols;j++)
+    {
+      C[i][j] =A[i][j] + B[i][j];
+    }
+
+
+}
+  //printing C matrix
+
+  printf(" A+B = ");
+  for(i=0;i<NumberOfRows;i++)
+{
+    printf("\t");
+    for(j=0;j<NumberOfCols;j++)
+    {
+        printf("%d   ",C[i][j]);
+    }
+    printf("\n");
+}
+
+}
+
+
+......................................................
+
+
+
+75.Multiplication of matrix
+
+
+
+#include<stdio.h>
+int main()
+{
+    int first[10][10],second[10][10],result[10][10],r1,r2,c1,c2,i,j,k,sum=0;
+
+    printf("Enter Rows and Column for the first matrix :");
+    scanf("%d %d",&r1,&c1);
+
+    printf("Enter Rows and Column for the second matrix :");
+    scanf("%d %d",&r2,&c2);
+    while(c1!=r2)
+    {
+        printf("Error !! Colum of first matrix is not equal to row of secound matrix :");
+
+        printf("Enter Rows and Column for the first matrix :");
+        scanf("%d %d",&r1,&c1);
+
+        printf("Enter Rows and Column for the second matrix :");
+        scanf("%d %d",&r2,&c2);
+
+    }
+
+//Input First matrix
+    printf("\nElements for first matrix\n");
+    for(i=0; i<r1; i++)
+    {
+
+        for(j=0; j<c1; j++)
+
+        {
+            printf("First [%d][%d]=",i,j);
+            scanf("%d",&first[i][j]);
+        }
+
+    }
+
+
+//Input Second matrix
+    printf("\nElements for second matrix \n");
+    for(i=0; i<r2; i++)
+    {
+
+        for(j=0; j<c2; j++)
+
+        {
+            printf("Second [%d][%d]=",i,j);
+            scanf("%d",&second[i][j]);
+        }
+
+    }
+    //Multiplying matrix
+    for(i=0; i<r1; i++)
+    {
+        for(j=0; j<c2; j++)
+        {
+            for(k=0; k<c1; k++)
+            {
+
+
+                sum=sum + first[i][k]*second[k][j];
+
+            }
+            result[i][j]=sum;
+            sum=0;
+        }
+    }
+//Printing First matrix
+    printf("\nFirst Matrix\n");
+    for(i=0; i<r1; i++)
+    {
+
+        for(j=0; j<c1; j++)
+            printf("%d  ",first[i][j]);
+        printf("\n");
+    }
+    //Printing second matrix
+    printf("\nSecond Matrix\n");
+    for(i=0; i<r2; i++)
+    {
+
+        for(j=0; j<c2; j++)
+            printf("%d  ",second[i][j]);
+        printf("\n");
+    }
+
+     //Printing result matrix
+    printf("\nResult Matrix\n");
+    for(i=0; i<r2; i++)
+    {
+
+        for(j=0; j<c2; j++)
+            printf("%d  ",result[i][j]);
+        printf("\n");
+    }
+
+}
+
+.........................................................
+
+76.String print 
+
+
+
+
+#include <stdio.h>
+int main()
+{
+  char s1[5];//declear
+  s1[0]='A';//initialize
+  s1[1]='B';
+  s1[2]='C';
+  s1[3]='D';
+  printf("s1=%s\n",s1);
+char s2[20]={'g','a','l','i','b'};
+char s3[19]="GAlib MAhmud";
+printf("s2=%s\n",s2);
+printf("s3 = %s\n",s3);
+
+
+
+
+}
+
+
+
+.........................................................
+
+
+77. String get input
+
+
+
+#include <stdio.h>
+int main()
+{
+char s1[30];
+printf("Enter your Full name ;");
+gets(s1);// scanf space r pore r kaj korte pare na
+
+printf("%s",s1);
+
+
+
+}
+
+
+
+
+...........................................................
+
+
+78.String Charecter wise display
+
+
+#include <stdio.h>
+int main()
+{
+char s1[]="GALIB";
+int i=0;
+while(s1[i]!='\0')
+{
+printf("%c\n",s1[i]);
+i++;
+}
+
+}
+
+
+
+...........................................................
+
+
+
+79.Finding Length of string
+
+
+
+#include <stdio.h>
+int main()
+{
+char s1[]="GALIB";
+int len= strlen(s1);
+printf("Length =%d\n",len);
+
+
+}
+
+
+
+#include <stdio.h>
+int main()
+{
+char s1[]="GALIB";
+int i=0,len=0;
+while(s1[i]!='\0')
+
+{
+    i++;
+    len++;
+
+}
+printf("Length =%d\n",len);
+
+
+}
+
+
+
+...........................................................
+
+
+80.String Copy
+
+
+
+#include <stdio.h>
+int main()
+{
+char source[]="GALIB";
+char target[20];
+strcpy(target,source);// target a rakhbo
+printf("source string =%s\n",source);
+printf("target string =%s\n",target);
+
+
+}
+
+
+
+........................................................
+
+
+81.String Concatination
+
+
+
+#include <stdio.h>
+int main()
+{
+char str1[]="GALIB ";
+char str2[]="MAHMUD";
+strcat(str1,str2);//string concatination
+
+printf("string1 =%s\n",str1);
+
+
+
+}
+
+.....................
+#include <stdio.h>
+int main()
+{
+char str1[50]="GALIB ";
+char str2[20]="MAHMUD";
+
+int i=0,len=0,j=0;
+while(strl[i]!='\0')
+{
+    i++;
+    len++;
+}
+while(str2[j]!='\0')
+{
+    str1[len+j]=str2[j];
+    j++;
+
+}
+
+
+printf("str1 =%s\n",str1);
+
+
+
+}
+
+
+.............................................
+
+82.Compare two string
+
+
+#include <stdio.h>
+int main()
+{
+char str1[50]="GALIB ";
+char str2[20]="MAHMUD";
+
+int d = strcmp(str1,str2);
+if(d==0)
+{
+    printf("strings are equal");
+
+
+    else
+    {
+        printf("Strings are not equal");
+
+    }
+
+}
+
+
+
+..................................................
+
+83. Strings Reverse
+
+#include <stdio.h>
+int main()
+{
+char str1[]="GALIB ";
+
+
+Strrev(str1);
+
+        printf("%s",str1);
+
+}
+
+
+
+
+
+..............
+
+
+#include <stdio.h>
+int main()
+{
+    char str1[30]="GALIB ";
+    char str2[30];
+    int i=0,len=0,j;
+    while(str1[i]!='\0')
+    {
+        i++;
+        len++;
+
+    }
+    for(j=0,i=len-1;i>=0;i--,j++)
+    {
+        str2[j]=str1[i];
+
+    }
+str2[j]='\0';
+printf("str2=%s\n",str2);
+printf("str1=%s\n",str1);
+
+}
+
+
+................................................
+
+84. String palindrom 
+
+#include <stdio.h>
+int main()
+{
+    char str1[30]="madam ";
+    char str2[30];
+    int i=0,len=0,j;
+    while(str1[i]!='\0')
+    {
+        i++;
+        len++;
+
+    }
+    for(j=0,i=len-1;i>=0;i--,j++)
+    {
+        str2[j]=str1[i];
+
+    }
+str2[j]='\0';
+printf("str2=%s\n",str2);
+printf("str1=%s\n",str1);
+
+int d = strcmp(str1,str2);
+if(d==0)
+    printf("String is palindrome");
+else
+    printf("String is not palindrome");
+
+
+}
+
+
+
+............................................
+
+
+85.String Swaping
+
+
+#include <stdio.h>
+int main()
+{
+
+    char str1[15]="Bangladesh";
+    char str2[15]="India";
+    char temp[15];
+
+    printf("Before swaping\n");
+    printf("str1= %s\n ",str1);
+    printf("str2= %s\n ",str2);
+
+    strcpy(temp,str1);
+    strcpy(str1,str2);
+    strcpy(str2,temp);
+
+    printf("\n\n After swaping\n");
+    printf("str1= %s\n ",str1);
+    printf("str2= %s\n ",str2);
+
+
+
+}
+
+
+.......................................................
+
+86.String strupr andstrlwr
+
+
+
+
+#include <stdio.h>
+int main()
+{
+
+    char str1[15]="Bangladesh";
+    strupr(str1);
+    printf("str1= %s\n",str1);
+strlwr(str1);
+    printf("str1= %s\n",str1);
+
+}
+
+
+...................................................
+
+
+87.String vowels,consonants,words,digit
+
+
+
+#include <stdio.h>
+int main()
+{
+
+    char str[100],ch;
+    int i,vowel,consonant,digit,word,other;
+
+    printf("Enter a string : ");
+    gets(str);
+    i=vowel=consonant=word=digit=other=0;
+    while((ch=str[i])!='\0')
+    {
+        if(ch=='a'||ch=='i'||ch=='o'||ch=='u'||ch=='e'||
+                ch=='A'||ch=='I'||ch=='O'||ch=='U'||ch=='E'
+          )
+            vowel++;
+
+        else if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+            consonant++;
+        else if (ch>='0'&& ch<='9')
+            digit++;
+        else if(ch==' ')
+            word++;
+        else
+            other++;
+
+
+
+        i++;
+    }
+    word++;
+    printf("Number of vowels = %d\n",vowel);
+    printf("Number of consonant = %d\n",consonant);
+    printf("Number of words = %d\n",word);
+    printf("Number of digits = %d\n",digit);
+    printf("Number of others= %d\n",other);
+
+
+
+
+
+
+}
+
+
+.....................................................
+
+88.Function 
+
+
+#include <stdio.h>
+int sum (int a, int b)
+{
+    return a+b;
+}
+int main()
+{
+    int num1,num2;
+    printf("Enter two numbers :");
+    scanf("%d %d",&num1,&num2);
+    printf("The sum is : %d\n",sum(num1,num2));
+
+
+}
+
+
+
+.........................................................
+
+89. Pointer 
+
+
+#include <stdio.h>
+int main()
+{
+    int x=10,y=20,sum;
+   int *ptr1,*ptr2;
+   ptr1 =&x;
+   ptr2 =&y;
+   sum =*ptr1 + *ptr2;
+   printf("sum = %d\n",sum);
+   getch();
+}
+
+
+........................................................
+
+90. Pointer swaping 
+
+
+
+#include <stdio.h>
+int main()
+{
+    int x=10,y=20,temp;
+   int *ptr1,*ptr2;
+   ptr1 =&x;
+   ptr2 =&y;
+  //swaping
+  temp= *ptr1;
+  *ptr1= *ptr2;
+  *ptr2= temp;
+
+   printf("x = %d\n",x);
+   printf("y = %d\n",y);
+   getch();
+}
+
+
+...........................................................
+
+91. File  create and write
+
+
+
+#include <stdio.h>
+int main()
+{
+FILE *file;
+char name[20] ="Anisul Islam";
+int length = strlen (name);
+int i;
+
+file=fopen("test.txt","w");
+if(file==NULL)
+{
+printf("file doesn't exist");
+}
+else
+  {
+
+   printf("File is opened");
+    for(i=0;i<length;i++)
+    {
+        fputc(name[i],file);
+    }
+    printf("File is written sucessfully");
+    fclose(file);}
+getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
